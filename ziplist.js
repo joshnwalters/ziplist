@@ -11,8 +11,9 @@ function zipItUp (list1, list2) {
   return list3;
 }
 
-function easyZipItUp (list1, list2) {
-  return _.zip(list1, list2);
+function easyZipItUp(list1, list2) {
+  const list3 = _.zip(list1, list2);
+  return _.flatten(list3);
 }
 
 const list1 = ['a', 'b', 'c'];
